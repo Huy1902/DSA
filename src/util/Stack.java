@@ -98,7 +98,7 @@ public class Stack<E> implements List<E> {
 
     @Override
     public E next() {
-      if(!hasNext()) {
+      if (!hasNext()) {
         throw new NoSuchElementException();
       }
       E data = current.data;
