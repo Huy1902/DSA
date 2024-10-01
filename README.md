@@ -6,8 +6,9 @@
 - Lec3: Algorithm analyzing (done)
   + Linkedlist: Hackerrank
   + Interface and Generic: Build my Linkedlist
-- Lec4: Stack and Queue (in process)
+- Lec4: Stack and Queue (done)
   + Iterator: Build my Stack and Queue
+  + Stack and Queue: Hackkerank
 - Lec5: Simple Sorting algorithms
 - Lec6: Merge sort and Quick sort
 - Lec8: Priority queue
