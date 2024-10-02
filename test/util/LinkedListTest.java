@@ -1,6 +1,7 @@
+package util;
+
 import org.junit.Before;
 import org.junit.Test;
-import util.LinkedList;
 
 import static org.junit.jupiter.api.Assertions.*;
 

@@ -1,6 +1,7 @@
+package util;
+
 import org.junit.Before;
 import org.junit.Test;
-import util.Stack;
 
 import java.util.ArrayList;
 import java.util.Arrays;
