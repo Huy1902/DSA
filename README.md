@@ -9,7 +9,10 @@
 - Lec4: Stack and Queue (done)
   + Iterator: Build my Stack and Queue
   + Stack and Queue: Hackkerank
-- Lec5: Simple Sorting algorithms
+- Lec5: Simple Sorting algorithms (in process)
+  + Insertion sort and Selection sort: Report in [this file](src/Lec5/Report.md)
+  + Shuffle algorithm
+  + Exercise on HackerRank
 - Lec6: Merge sort and Quick sort
 - Lec8: Priority queue
 - Lec9: Symbol table and BinaryTree
