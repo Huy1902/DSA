@@ -13,8 +13,14 @@
   + Insertion sort and Selection sort: Report in [this file](src/Lec5/Report.md)
   + Shuffle algorithm
   + Exercise on HackerRank
-- Lec6: Merge sort and Quick sort
-- Lec8: Priority queue
+- Lec6: Merge sort and Quick sort (done)
+  + Sort2: Ex1, Ex2
+  + Mergesort and Quicksort Implementation
+  + Update report in [this file](src/Lec5/Report.md)
+- Lec7: Priority queue (done)
+  + Priority Queue Implementation
+  + Sort2: all rest exercise in Sort2
+- Lec8: Midterm exam
 - Lec9: Symbol table and BinaryTree
 - Lec10: BinarySearchTree, BalancedSearchTree
 - Lec11: Hash Table
