@@ -1,22 +1,60 @@
-package Lec5;
+package Lec6;
 
-import edu.princeton.cs.algs4.*;
-import org.junit.jupiter.api.BeforeEach;
+import edu.princeton.cs.algs4.In;
+import edu.princeton.cs.algs4.StdOut;
+import edu.princeton.cs.algs4.StdRandom;
+import edu.princeton.cs.algs4.StdStats;
 import org.junit.jupiter.api.Test;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Collections;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class InsertionSortTest {
-  @BeforeEach
-  void setUp() {
+public class MergeSortTest {
+
+  @Test
+  public void testSortedArray() {
+    int[] array = {1, 2, 3, 4, 5};
+    int[] original = array.clone();
+    Lec6.MergeSort.sort(array);
+    assertArrayEquals(original, array);
   }
 
   @Test
-  void testInsertionSortWithAscendingOrderInput() {
+  public void testReversedArray() {
+    int[] array = {5, 4, 3, 2, 1};
+    int[] expected = {1, 2, 3, 4, 5};
+    Lec6.MergeSort.sort(array);
+    assertArrayEquals(expected, array);
+  }
+
+  @Test
+  public void testRandomArray() {
+    int[] array = {4, 1, 3, 5, 2};
+    int[] expected = {1, 2, 3, 4, 5};
+    Lec6.MergeSort.sort(array);
+    assertArrayEquals(expected, array);
+  }
+
+  @Test
+  public void testEmptyArray() {
+    int[] array = {};
+    int[] expected = {};
+    Lec6.MergeSort.sort(array);
+    assertArrayEquals(expected, array);
+  }
+
+  @Test
+  public void testOneElementArray() {
+    int[] array = {1};
+    int[] expected = {1};
+    Lec6.MergeSort.sort(array);
+    assertArrayEquals(expected, array);
+  }
+
+  @Test
+  void testMergeSortWithAscendingOrderInput() {
     int[] test = new int[]{1, 2, 4, 8, 16, 32};
     for (int i = 0; i < test.length; i++) {
       String file = Integer.toString(test[i]) + "Kints.txt";
@@ -32,7 +70,7 @@ class InsertionSortTest {
         expected[j] = temp.get(j);
       }
       double start = System.currentTimeMillis();
-      InsertionSort.sort(a);
+      Lec6.MergeSort.sort(a);
       double end = System.currentTimeMillis();
       assertArrayEquals(expected, a);
       System.out.println(end - start);
@@ -40,7 +78,7 @@ class InsertionSortTest {
   }
 
   @Test
-  void testInsertionSortWithRandomInput() {
+  void testMergeSortWithRandomInput() {
     int trial = 1000;
     double sumCoefficient = 0;
     for (int t = 0; t < trial; ++t) {
@@ -50,16 +88,16 @@ class InsertionSortTest {
         a[i] = StdRandom.uniformInt(1, 10000);
       }
       double start = System.currentTimeMillis();
-      InsertionSort.sort(a);
+      Lec6.MergeSort.sort(a);
       double end = System.currentTimeMillis();
-      sumCoefficient += (end - start) / (n * n);
+      sumCoefficient += (end - start) / (n * Math.log(n));
       //System.out.println(end - start);
     }
     System.out.println(sumCoefficient / trial);
   }
 
   @Test
-  void testInsertionSortWithPresortedInput() {
+  void testMergeSortWithPresortedInput() {
     int trial = 10000;
     double[] resultTrial = new double[trial];
     double[] coefficient1 = new double[trial];
@@ -80,10 +118,10 @@ class InsertionSortTest {
       //StdOut.println(temp);
 
       double start = System.currentTimeMillis();
-      InsertionSort.sort(a);
+      Lec6.MergeSort.sort(a);
       double end = System.currentTimeMillis();
       resultTrial[t] = (end - start);
-      coefficient1[t] = (end - start) / (n * n);
+      coefficient1[t] = (end - start) / (n * Math.log(n));
       coefficient2[t] = (end - start) / n;
       //System.out.println(end - start);
     }
@@ -91,13 +129,14 @@ class InsertionSortTest {
     StdOut.print("Coefficient_of_Variation: " + Coefficient_of_Variation
             + "\nMean: " + StdStats.mean(resultTrial)
             + "\nStandard_deviation: " + StdStats.stddev(resultTrial)
-            + "\nCoefficient1: " + StdStats.stddev(coefficient1)
-            + "\nCoefficient2: " + StdStats.stddev(coefficient2));
+            + "\nCoefficient1(nlogn): " + StdStats.stddev(coefficient1)
+            + "\nCoefficient1(n): " + StdStats.stddev(coefficient2)
+            + "\n");
   }
 
 
   @Test
-  void testInsertionSortWithReverseOrderInput() {
+  void testMergeSortWithReverseOrderInput() {
     int trial = 10000;
     double[] resultTrial = new double[trial];
     double[] coefficient1 = new double[trial];
@@ -118,10 +157,10 @@ class InsertionSortTest {
       //StdOut.println(temp);
 
       double start = System.currentTimeMillis();
-      InsertionSort.sort(a);
+      Lec6.MergeSort.sort(a);
       double end = System.currentTimeMillis();
       resultTrial[t] = (end - start);
-      coefficient1[t] = (end - start) / (n * n);
+      coefficient1[t] = (end - start) / (n * Math.log(n));
       coefficient2[t] = (end - start) / n;
       //System.out.println(end - start);
     }
@@ -129,12 +168,13 @@ class InsertionSortTest {
     StdOut.print("Coefficienet_of_Variation: " + Coefficient_of_Variation
             + "\nMean: " + StdStats.mean(resultTrial)
             + "\nStandard_dviation: " + StdStats.stddev(resultTrial)
-            + "\nCoefficient1: " + StdStats.stddev(coefficient1) / StdStats.mean(coefficient1)
-            + "\nCoefficient2: " + StdStats.stddev(coefficient2) / StdStats.mean(coefficient2));
+            + "\nCoefficient1(nlogn): " + StdStats.stddev(coefficient1) / StdStats.mean(coefficient1)
+            + "\nCoefficient1(n): " + StdStats.stddev(coefficient2) / StdStats.mean(coefficient2)
+            + "\n");
   }
 
   @Test
-  void testInsertionSortWithIdenticalElementsInput() {
+  void testMergeSortWithIdenticalElementsInput() {
     int trial = 10000;
     double[] resultTrial = new double[trial];
     double[] coefficient1 = new double[trial];
@@ -149,18 +189,18 @@ class InsertionSortTest {
       //StdOut.println(temp);
 
       double start = System.currentTimeMillis();
-      InsertionSort.sort(a);
+      Lec6.MergeSort.sort(a);
       double end = System.currentTimeMillis();
       resultTrial[t] = (end - start);
-      coefficient1[t] = (end - start) / (n * n);
+      coefficient1[t] = (end - start) / (n * Math.log(n));
       coefficient2[t] = (end - start) / n;
-      //System.out.println(end - start);
     }
     double Coefficient_of_Variation = StdStats.stddev(resultTrial) / StdStats.mean(resultTrial);
     StdOut.print("Coefficient_of_Variation: " + Coefficient_of_Variation
             + "\nMean: " + StdStats.mean(resultTrial)
             + "\nStandard_deviation: " + StdStats.stddev(resultTrial)
-            + "\nCoefficient1: " + StdStats.stddev(coefficient1) / StdStats.mean(coefficient1)
-            + "\nCoefficient2: " + StdStats.stddev(coefficient2) / StdStats.mean(coefficient2));
+            + "\nCoefficient1(nlogn): " + StdStats.stddev(coefficient1) / StdStats.mean(coefficient1)
+            + "\nCoefficient1(n): " + StdStats.stddev(coefficient2) / StdStats.mean(coefficient2)
+            + "\n");
   }
 }
