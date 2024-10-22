@@ -16,11 +16,18 @@ root of smaller tree to root of larger tree.
     + Hence, we can ensure find O(lgN), union O(lgN), connected O(lgN)
   + Improvement 2: path compression: Make every node in path point to its grandparent
     + Keep tree almost completely flat
-  + wighted QU + path compression: in theory is not linear but linear in practice
-  ![img.png](img.png)
+  + wighted QU + path compression: in theory is not linear but linear in practice.
+  + Benefits: It significantly improves the performance of the union-find algorithm in practical scenarios.
+
+  ![img.png](src/main/resources/img.png)
 - Lec3: Algorithm analyzing (done)
   + Linkedlist: Hackerrank
   + Interface and Generic: Build my Linkedlist
+  + Observation
+    + Empirical analysis
+    + Data analysis (Standard plot, Log-log plot)
+    + Example for Log-log plot:
+    ![img.png](img.png)
 - Lec4: Stack and Queue (done)
   + Iterator: Build my Stack and Queue
   + Stack and Queue: Hackkerank
