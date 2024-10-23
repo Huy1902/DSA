@@ -26,11 +26,57 @@ root of smaller tree to root of larger tree.
   + Observation
     + Empirical analysis
     + Data analysis (Standard plot, Log-log plot)
-    + Example for Log-log plot:
+    + Example for Log-log plot
+    
+    ![img.png](src/main/resources/img1.png)
+    
+  + Mathematical model
+    + Simplification 1: Cost model
+    + Simplification 2: Tilde notation
+    + Diversion: estimate a discrete sum (Trick: replace sum with an integral, and use calculus.)
+  + Order-of-growth classification(Better => Faster in practice)
+    
     ![img.png](img.png)
+
+  + Theory of algorithm
+    + Best case: Lower bound on cost (a goal for all input)
+    + Worst case: Upper bound on cost (a guarantee for all input)
+    + Average case: Expected cost for random input (a way to predict performance)
+    + Optimal algorithm: Lower bound = upper bound (to within a constant factor)
+    + Notation:
+  
+    ![img_2.png](src/main/resources/img_2.png)
+  
+  + Memory: Typical memory in Java
+    + Object overhead: 16 bytes
+    + Reference: 8 bytes
+    + Padding: Each object uses a multiple of 8 bytes
+  
 - Lec4: Stack and Queue (done)
   + Iterator: Build my Stack and Queue
-  + Stack and Queue: Hackkerank
+  + Stack LIFO and Queue FILO: Hackkerank
+  + When i mention linked list, i mean singly linked list. In doubly linked list, it's easier to implement.
+
+  + Stack: linked list
+    + push: O(1)
+    + pop: O(1)
+  + Stack: resizing array (Remember: amortized analysis account for the long-term 
+  average performance rather than worst-case for each operation)
+    + Double when array is full
+    + Halve size when array is one-quarter full
+    + Array is between 25% and 100% full
+    + We have N for doubling and halving operations
+
+  ![img_1.png](img_1.png)
+
+  + Queue: linked list
+    + enqueue: O(1) (we save position last node of list)
+    + dequeue: O(1) 
+  + Queue: resizing array:
+    + We keep elements in queue in middle of arrays, not at start either end.
+    + Enqueue and dequeue have same complexity as stack
+  + Generic: use parameter to specify type
+  + Iterator: use a same interface for loop through any type of object which is implementation of Iterator
 - Lec5: Simple Sorting algorithms (done)
   + Insertion sort and Selection sort: Report in [this file](src/Lec5/Report.md)
   + Shuffle algorithm
