@@ -81,6 +81,21 @@ root of smaller tree to root of larger tree.
   + Insertion sort and Selection sort: Report in [this file](src/Lec5/Report.md)
   + Shuffle algorithm
   + Exercise on HackerRank
+  + Selection sort: find the smallest element in remaining entry => swap
+    + Invariant: left in ascending order, no entry to right smaller than any entry to the left
+    + Performance: insensitive with input, always O(N^2)
+  + Insertion sort: swap current with each larger entry to its left
+    + Best case: O(N) - ascending order
+    + Worst cast: O(N^2) - descending order
+    + For partially-sorted array: we knew number of swap equal to number of inversion which is <= c*N in this case.
+    Hence, running time of insertion sorted with partially-sorted array is linear time O(N). (REMEMBER)
+    + Improvement:
+      + Half exchange: Shift items over(instead of exchanging)
+      + Binary insertion sort
+    
+  ![img_2.png](img_2.png)
+
+  + Shuffling: Knuth shuffle
 - Lec6: Merge sort and Quick sort (done)
   + Sort2: Ex1, Ex2
   + Mergesort and Quicksort Implementation
