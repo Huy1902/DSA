@@ -1,7 +1,18 @@
-# My process
-- Lec1: Introduction to Java (done)
+# **My process**
+
+## Table of Contents
+
+- [Lec1: Introduction to Java (done)](#lec1-introduction-to-java-done)
+- [Lec2: Union-Find (done)](#lec2-union-find-done)
+- [Lec3: Algorithm analyzing (done)](#lec3-algorithm-analyzing-done)
+- [Lec4: Stack and Queue (done)](#lec4-stack-and-queue-done)
+- [Lec5: Simple Sorting algorithms (done)](#lec5-simple-sorting-algorithms-done)
+- [Lec6: Merge sort and Quick sort (done)](#lec6-merge-sort-and-quick-sort-done)
+- [Lec7: Priority queue (done)](#lec7-priority-queue-done)
+
+## Lec1: Introduction to Java (done)
   + IntroJava
-- Lec2: Union-Find (done)
+## Lec2: Union-Find (done)
   + Percolation
   + Quick find (optimize find is O(1)) is too slow (with access model is N^2 to 
 process a sequence of N union operations of N object). Union too expensive. Trees are flat,
@@ -20,7 +31,7 @@ root of smaller tree to root of larger tree.
   + Benefits: It significantly improves the performance of the union-find algorithm in practical scenarios.
 
   ![img.png](src/main/resources/img.png)
-- Lec3: Algorithm analyzing (done)
+## Lec3: Algorithm analyzing (done)
   + Linkedlist: Hackerrank
   + Interface and Generic: Build my Linkedlist
   + Observation
@@ -52,7 +63,7 @@ root of smaller tree to root of larger tree.
     + Reference: 8 bytes
     + Padding: Each object uses a multiple of 8 bytes
   
-- Lec4: Stack and Queue (done)
+## Lec4: Stack and Queue (done)
   + Iterator: Build my Stack and Queue
   + Stack LIFO and Queue FILO: Hackkerank
   + When i mention linked list, i mean singly linked list. In doubly linked list, it's easier to implement.
@@ -77,7 +88,7 @@ root of smaller tree to root of larger tree.
     + Enqueue and dequeue have same complexity as stack
   + Generic: use parameter to specify type
   + Iterator: use a same interface for loop through any type of object which is implementation of Iterator
-- Lec5: Simple Sorting algorithms (done)
+## Lec5: Simple Sorting algorithms (done)
   + Insertion sort and Selection sort: Report in [this file](src/Lec5/Report.md)
   + Shuffle algorithm
   + Exercise on HackerRank
@@ -100,7 +111,7 @@ root of smaller tree to root of larger tree.
 
   + Shuffling: Knuth shuffle
     + Ensure probability of each result tuple is equal
-- Lec6: Merge sort and Quick sort (done)
+## Lec6: Merge sort and Quick sort (done)
   + Sort2: Ex1, Ex2
   + Mergesort and Quicksort Implementation
   + Update report in [this file](src/Lec5/Report.md)
@@ -134,15 +145,19 @@ root of smaller tree to root of larger tree.
     ![img_3.png](img_3.png)
   
     + Make use of cache than heap sort, with segment is larger than heapsort, data from heapsort is scattering
-- Lec7: Priority queue (done)
+## Lec7: Priority queue (done)
   + Priority Queue Implementation
-  + Sort2: all rest exercise in Sort2
-- Lec8: Midterm exam: Prepare for test (Works on Leetcode):
+  + Sort2: all rest exercise in Sort2 
+## Lec8: Midterm exam: Prepare for test (Works on Leetcode):
   + Union - Find
-- Lec9: Symbol table and BinaryTree
-- Lec10: BinarySearchTree, BalancedSearchTree
-- Lec11: Hash Table
-- Lec12: Graph
-- Lec13: Minium spanning tree
-- Lec14: Shortest Path
-- Lec15: Dynamic Programming, NP-Completeness
+  + Algorithm analysis
+  + Queue and Stack
+  + Simple sorting algorithm
+  + Merge sort
+## Lec9: Symbol table and BinaryTree
+## Lec10: BinarySearchTree, BalancedSearchTree
+## Lec11: Hash Table
+## Lec12: Graph
+## Lec13: Minium spanning tree
+## Lec14: Shortest Path
+## Lec15: Dynamic Programming, NP-Completeness
