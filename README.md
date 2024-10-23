@@ -92,14 +92,48 @@ root of smaller tree to root of larger tree.
     + Improvement:
       + Half exchange: Shift items over(instead of exchanging)
       + Binary insertion sort
+  + Bubble sort: swap max element to last of array (bubble swim up)
+    + Best case: O(N), break loop with boolean swapped know whether array is sorted or not
+    + Worst case: O(N^2)
     
   ![img_2.png](img_2.png)
 
   + Shuffling: Knuth shuffle
+    + Ensure probability of each result tuple is equal
 - Lec6: Merge sort and Quick sort (done)
   + Sort2: Ex1, Ex2
   + Mergesort and Quicksort Implementation
   + Update report in [this file](src/Lec5/Report.md)
+  + Merge sort:
+    + Basic plan: Divide array into two halves => Recursively sort each half => Merge two half
+    + Number of compares <= NlgN
+      + Proof by picture
+      + Proof by induction
+    + Number of array access <= 6NlgN
+    + In-place: use <= cLogN extra memory => not in-place with merge sort
+    + Practical improvements
+      + Use insertion sort for small sub arrays
+      + Stop if already sorted
+      + Eliminate the copy to the auxiliary array (save time not space)
+    + Bottom-up merge sort:
+      + Pass through array, merging subarray of size 1
+      + Repeat for subarray of size 2, 4, 8,...
+      + Simple and non-recursive but slower than top-down (when use on system)
+    + Sorting complexity:
+      + Model of computation: decision tree (each leaf corresponding to one ordering). We have N! ordering of give array
+      + Cost model: compare (access, ...)
+      + Upper bound: NlgN for mergesort
+      + Lower bound: N! different ordering in decision tree means at least N! leaf => at least lg(N!) ~ Nlog(N) 
+      + With cost model is compare: merge sort is optimal (upper and lower meet)
+      + Merge sort is not optimal with memory usage.
+      + Lower bound can take advantage of initial order, distribution of key values, representation of keys.
+    + Comparator
+      + Comparator interface implementation
+    + Stability: preserve the relative order of items with equal keys
+    
+    ![img_3.png](img_3.png)
+  
+    + Make use of cache than heap sort, with segment is larger than heapsort, data from heapsort is scattering
 - Lec7: Priority queue (done)
   + Priority Queue Implementation
   + Sort2: all rest exercise in Sort2
