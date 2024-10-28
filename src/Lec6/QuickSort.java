@@ -75,12 +75,11 @@ public class QuickSort {
   }
 
   private static void sort(int[] a, int l, int r) {
-    if (l >= r) {
-      return;
+    if(l <= r - 1) {
+      int p = partition2(a, l, r);
+      sort(a, l, p - 1);
+      sort(a, p + 1, r);
     }
-    int p = partition2(a, l, r);
-    sort(a, l, p - 1);
-    sort(a, p + 1, r);
   }
 
   public static void sort(int[] a) {
