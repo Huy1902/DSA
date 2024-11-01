@@ -88,6 +88,8 @@ root of smaller tree to root of larger tree.
     + Enqueue and dequeue have same complexity as stack
   + Generic: use parameter to specify type
   + Iterator: use a same interface for loop through any type of object which is implementation of Iterator
+
+  + Solution for Dequeues and Randomized Queues on Coursera
 ## Lec5: Simple Sorting algorithms (done)
   + Insertion sort and Selection sort: Report in [this file](src/Lec5/Report.md)
   + Shuffle algorithm
@@ -148,12 +150,13 @@ root of smaller tree to root of larger tree.
 ## Lec7: Priority queue (done)
   + Priority Queue Implementation
   + Sort2: all rest exercise in Sort2 
-## Lec8: Midterm exam: Prepare for test (Works on Leetcode):
+## Lec8: Midterm exam: Prepare for test (Works on Leetcode) (done)
   + Union - Find
   + Algorithm analysis
   + Queue and Stack
   + Simple sorting algorithm
   + Merge sort
+  + Solution for 8-puzzle on Coursera
 ## Lec9: Symbol table and BinaryTree
 ## Lec10: BinarySearchTree, BalancedSearchTree
 ## Lec11: Hash Table
