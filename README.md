@@ -157,10 +157,12 @@ root of smaller tree to root of larger tree.
   + Simple sorting algorithm
   + Merge sort
   + Solution for 8-puzzle on Coursera
-## Lec9: Symbol table and BinaryTree
-## Lec10: BinarySearchTree, BalancedSearchTree
-## Lec11: Hash Table
-## Lec12: Graph
-## Lec13: Minium spanning tree
-## Lec14: Shortest Path
-## Lec15: Dynamic Programming, NP-Completeness
+## Lec9: Symbol table and BinaryTree (done)
+## Lec10: BinarySearchTree, BalancedSearchTree (done)
+## Lec11: Hash Table (done)
+## Lec12: Graph (done)
+## Lec13: Minium spanning tree (done)
+## Lec14: Shortest Path (done)
+## Lec15: Dynamic Programming, NP-Completeness (done)
+
+***Continue read note here:*** [Final Exam review](note/Final%20Exam%20DSA/)
