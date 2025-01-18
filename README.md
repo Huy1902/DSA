@@ -4,11 +4,18 @@
 
 - [Lec1: Introduction to Java (done)](#lec1-introduction-to-java-done)
 - [Lec2: Union-Find (done)](#lec2-union-find-done)
-- [Lec3: Algorithm analyzing (done)](#lec3-algorithm-analyzing-done)
+- [Lec3: Algorithm Analyzing (done)](#lec3-algorithm-analyzing-done)
 - [Lec4: Stack and Queue (done)](#lec4-stack-and-queue-done)
-- [Lec5: Simple Sorting algorithms (done)](#lec5-simple-sorting-algorithms-done)
-- [Lec6: Merge sort and Quick sort (done)](#lec6-merge-sort-and-quick-sort-done)
-- [Lec7: Priority queue (done)](#lec7-priority-queue-done)
+- [Lec5: Simple Sorting Algorithms (done)](#lec5-simple-sorting-algorithms-done)
+- [Lec6: Merge Sort and Quick Sort (done)](#lec6-merge-sort-and-quick-sort-done)
+- [Lec7: Priority Queue (done)](#lec7-priority-queue-done)
+- [Lec8: Symbol Table and Binary Tree (done)](#lec8-symbol-table-and-binary-tree-done)
+- [Lec9: Binary Search Tree, Balanced Search Tree (done)](#lec9-binary-search-tree-balanced-search-tree-done)
+- [Lec10: Hash Table (done)](#lec10-hash-table-done)
+- [Lec11: Graph (done)](#lec11-graph-done)
+- [Lec12: Minimum Spanning Tree (done)](#lec12-minimum-spanning-tree-done)
+- [Lec13: Shortest Path (done)](#lec13-shortest-path-done)
+- [Lec14: Dynamic Programming, NP-Completeness (done)](#lec14-dynamic-programming-np-completeness-done)
 
 ## Lec1: Introduction to Java (done)
   + IntroJava
