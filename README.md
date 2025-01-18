@@ -9,13 +9,16 @@
 - [Lec5: Simple Sorting Algorithms (done)](#lec5-simple-sorting-algorithms-done)
 - [Lec6: Merge Sort and Quick Sort (done)](#lec6-merge-sort-and-quick-sort-done)
 - [Lec7: Priority Queue (done)](#lec7-priority-queue-done)
-- [Lec8: Symbol Table and Binary Tree (done)](#lec8-symbol-table-and-binary-tree-done)
-- [Lec9: Binary Search Tree, Balanced Search Tree (done)](#lec9-binary-search-tree-balanced-search-tree-done)
-- [Lec10: Hash Table (done)](#lec10-hash-table-done)
-- [Lec11: Graph (done)](#lec11-graph-done)
-- [Lec12: Minimum Spanning Tree (done)](#lec12-minimum-spanning-tree-done)
-- [Lec13: Shortest Path (done)](#lec13-shortest-path-done)
-- [Lec14: Dynamic Programming, NP-Completeness (done)](#lec14-dynamic-programming-np-completeness-done)
+- [Lec8: Midterm Exam Preparation (done)](#lec8-midterm-exam-preparation-done)
+- [Lec9: Symbol Table and Binary Tree (done)](#lec9-symbol-table-and-binary-tree-done)
+- [Lec10: Binary Search Tree, Balanced Search Tree (done)](#lec10-binary-search-tree-balanced-search-tree-done)
+- [Lec11: Hash Table (done)](#lec11-hash-table-done)
+- [Lec12: Graph (done)](#lec12-graph-done)
+- [Lec13: Minimum Spanning Tree (done)](#lec13-minimum-spanning-tree-done)
+- [Lec14: Shortest Path (done)](#lec14-shortest-path-done)
+- [Lec15: Dynamic Programming, NP-Completeness (done)](#lec15-dynamic-programming-np-completeness-done)
+
+***Continue reading notes here:*** [Final Exam review](note/Final%20Exam%20DSA/)
 
 ## Lec1: Introduction to Java (done)
   + IntroJava
@@ -165,11 +168,17 @@ root of smaller tree to root of larger tree.
   + Merge sort
   + Solution for 8-puzzle on Coursera
 ## Lec9: Symbol table and BinaryTree (done)
+
 ## Lec10: BinarySearchTree, BalancedSearchTree (done)
+
 ## Lec11: Hash Table (done)
+
 ## Lec12: Graph (done)
+
 ## Lec13: Minium spanning tree (done)
+
 ## Lec14: Shortest Path (done)
+
 ## Lec15: Dynamic Programming, NP-Completeness (done)
 
 ***Continue read note here:*** [Final Exam review](note/Final%20Exam%20DSA/)
